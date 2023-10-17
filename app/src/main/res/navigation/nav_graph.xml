@@ -27,7 +27,14 @@
         android:id="@+id/highScoreFragment"
         android:name="com.example.midtermgame.HighScoreFragment"
         android:label="fragment_high_score"
-        tools:layout="@layout/fragment_high_score" />
+        tools:layout="@layout/fragment_high_score" >
+        <action
+            android:id="@+id/action_highScoreFragment_to_mainFragment"
+            app:destination="@id/mainFragment" >
+            <argument
+                android:name="Name" />
+        </action>
+    </fragment>
     <fragment
         android:id="@+id/gameFragment"
         android:name="com.example.midtermgame.GameFragment"

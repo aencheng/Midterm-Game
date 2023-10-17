@@ -33,9 +33,8 @@ class MainFragment : Fragment() {
         val play = view.findViewById<Button>(R.id.PlayButton)
         val highScore = view.findViewById<Button>(R.id.ViewHighScoreButton)
 
-        if(param1 != null && param2 != null){
+        if(param1 != null && param2 != null && param1 != "default_name" && param2 != -1){
             text.text = "$param1 score: $param2\n\nPlay Another Game?"
-
         }
 
         play.setOnClickListener {
